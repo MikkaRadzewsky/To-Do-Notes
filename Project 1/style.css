@@ -1,0 +1,180 @@
+  
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  form{
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+  
+
+
+section:hover .deleteButton {
+    visibility:visible;
+}
+
+.deleteButton {
+    background-color: rgb(142, 12, 12);
+    visibility: hidden;
+    border: none; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    position: relative;
+    right: 10px;
+    bottom: 50px;
+    height: 25px;
+    width: 30px;
+  }
+  
+.fadeIn{
+    animation: fadeIn 5s;
+}
+
+
+@keyframes fadeIn{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+
+body {
+    background-image: url(assets/images/tile.jpg);
+    background-repeat: repeat;
+  padding-bottom: 100px;
+
+}
+
+h1 {
+    font-family: fantasy;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    text-shadow: -1px -1px rgb(93, 97, 136), 1px 1px rgb(172, 186, 236), -3px 0 4px #000;
+    color: rgb(208, 195, 220);
+}
+
+
+form {
+
+    width: 400px;
+    border: 1px solid black;
+    margin-left: 500px;
+    margin-top: 100px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(107, 66, 132)
+}
+
+textarea {
+    resize: none;
+    background-image: url(assets/images/formbg.jpg);
+    background-size: contain;
+    background-position: -40px;
+    line-height: 0.5;
+    width: 375px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: auto;
+    text-align: left;
+    border-radius: 10px;
+
+}
+  
+
+span {
+    padding-left: 75px;
+    padding-right: 75px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+
+.toDoDiv {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-y: scroll;
+    float: left;
+    width: 150px;
+    overflow: auto;
+    height: 100px;
+    background: none;
+    border: none;
+}
+
+.dateDiv {
+    text-align: left;
+}
+
+section {
+    background-image: url("assets/images/notebg.png");
+    background-repeat: no-repeat;
+    padding: 15px;
+    padding-right: 15px;
+    background-size: 220px;
+    width: 200px;
+}
+
+
+h5,
+.dateDiv {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(149, 109, 201);
+    font-family: fantasy;
+
+}
+
+h6{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(149, 109, 201);
+    font-family: fantasy;
+    color: rgb(218, 202, 225);
+}
+
+div {
+
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 10px 7px 5px;
+
+}
+
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    text-align: center;
+}
+
+
+#alertDiv{
+
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    margin-left: 450px;
+}

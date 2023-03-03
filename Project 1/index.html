@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="main.js"> </script>
+</head>
+<style>
+    textarea {
+        resize: none;
+    }
+</style>
+
+<body>
+    <form>
+        <h1>My To-Do List:</h2>
+            <textarea type="text" id="toDoBox" placeholder="To Do:"></textarea>
+            <h6>Deadline:</h6>
+            <input type="date" name="dateBox" id="dateBox" onclick="setMinDate()">
+            <br>
+            <input type="time" name="timeBox" id="timeBox"  onclick="setMinTime()">
+            <br><br>
+            <button type="button" class="btn btn-outline-success" onclick="addToDo()">Add</button>
+            <button type="reset" class="btn btn-outline-warning">Clear Form</button>
+    </form>
+
+    <br>
+    <div id="alertDiv" class="alert alert-warning" role="alert">
+        Here you can add and delete To-Do-Notes. Have Fun :)</div>
+
+    <br><br>
+
+    <span id="span"></span>
+
+
+
+</body>
+
+</html>
